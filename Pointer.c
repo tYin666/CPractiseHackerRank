@@ -4,6 +4,7 @@
 #include <string.h>
 #include <math.h>
 
+// video 42: Point to a value and point to a address 
 int main()
 {
     int tuna = 19;
