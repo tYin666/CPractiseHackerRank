@@ -6,8 +6,15 @@
 int main()
 {
    FILE * fPointer;
-   fPointer = fopen("bacon.txt", "w");
-   fprintf(fPointer, "i love cheese\n");
+   //fPointer = fopen("bacon.txt", "w");
+   //fprintf(fPointer, "i love cheese\n");
+   //fprintf(fPointer, "Bacon is good\n");
+   fPointer = fopen("bacon.txt", "r");
+   char singleLine[150];
+
+   while(!feof(fPointer)){
+       fgets(singleLine, 150, fPointer);
+   }
    fclose(fPointer);
 
    return 0;
