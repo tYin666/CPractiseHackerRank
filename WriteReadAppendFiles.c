@@ -5,17 +5,28 @@
 // ArrayName save the address of first element
 int main()
 {
-   FILE * fPointer;
+   // Write a file 
+   //FILE * fPointer;
    //fPointer = fopen("bacon.txt", "w");
    //fprintf(fPointer, "i love cheese\n");
    //fprintf(fPointer, "Bacon is good\n");
-   fPointer = fopen("bacon.txt", "r");
+
+  // read file 
+   /* fPointer = fopen("bacon.txt", "r");
    char singleLine[150];
 
    while(!feof(fPointer)){
        fgets(singleLine, 150, fPointer);
    }
-   fclose(fPointer);
+   fclose(fPointer); */
+  
+   // append a file
 
-   return 0;
+   FILE * fPointer; 
+   fPointer = fopen("bacon.txt","a");
+
+   fprintf(fPointer, "\n- a hikewl by Bucky Rboerts");
+
+   fclose(fPointer);
+   return 0; 
 }
